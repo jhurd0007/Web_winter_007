@@ -1,0 +1,32 @@
+body {
+    background-color: bisque;
+}
+
+.span1{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    font-size: xx-large;
+}
+
+.span2{
+    font-size: larger;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: lightblue;
+}
+
+.nav{
+    list-style: style none;
+    text-align:center;
+}
+
+.nav li {
+    display: inline;
+        margin-right: 20px;
+    }
+    

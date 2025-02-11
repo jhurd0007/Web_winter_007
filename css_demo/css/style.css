@@ -1,0 +1,33 @@
+body {
+    background-color: bisque;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: lightblue;
+}
+
+.nav{
+    list-style: style none;
+    text-align:center;
+}
+
+.nav li {
+display: inline;
+    margin-right: 20px;
+}
+
+.copy {
+font-size:25px;
+color:blue;
+background-color:antiquewhite
+}
+
+.span1{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    font-size: xx-large;
+}

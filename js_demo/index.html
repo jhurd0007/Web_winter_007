@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <h1>DO YOUR DUOLINGO!!!</h1>
+    <h2>click below to do your Duolingo</h2>
+    <p><a href="https://www.duolingo.com/" target="_blank" onclick="alert('good job doing your Duolingo')">Duolingo</a></p>
+    
+    <h2>You can learn to do math with Duolingo as well, to be as fast as this computer! let's practice</h2>
+    <p>what is 2+7!</p>
+    <button onclick="document.getElementById('add').innerHTML=2+7*6*5*4*3*2*1">click here to check your answer!</button>
+    <p id="add"></p>
+
+    <h2>you should set a time for doing Duolingo</h2>
+    <p>do your Duolingo for 15 minutes</p>
+    <button onclick="document.getElementById('date').innerHTML=Date()">click here for the date and time</button>
+    <p id="date"></p>
+    <h2>Have you done your Duolingo?</h2>
+    <button onclick="document.getElementById('change-text').innerHTML='Good Job!'">Click here if you have</button >
+    <p id="change-text">Do your Duolingo!</p>
+
+        <h2>Duolingo offers many languages</h2>
+        <p>How many you ask?</p>
+        <button onclick="pFun()">Click here to find out!</button>
+        <p id="p-fun"></p>
+
+        <h2>Give your name to Duo</h2>
+        <button onclick="askName()">click here</button>
+        <p id="ask-name"></p>
+
+        <h2>now practice your Spanish.</h2>
+        <button onclick="askQuestion()">click here for a question</button>
+        <p id="question"></p>
+    <script>
+        alert("Spanish Or Vanish")
+
+        function askName() {
+            var nameReturn = document.getElementById('ask-name');
+            var name = prompt('Enter your full name' , 'HERE');
+            if (name=='') {
+                alert('you must give your name to Duo');
+            } else {
+                nameReturn.innerHTML = "You are now in Duo's Database " + name + ". Thank you.";
+            }
+        }
+
+        function pFun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML='42 languages!';
+            p.style.color = 'blue';
+            p.style.fontSize='30px';
+        }
+    </script>
+</body>
+</html>
